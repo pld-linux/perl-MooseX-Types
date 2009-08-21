@@ -8,22 +8,23 @@
 Summary:	MooseX::Types - Organise your Moose types in libraries
 Summary(pl.UTF-8):	MooseX::Types - porządkuje typy Moose w biblioteki
 Name:		perl-MooseX-Types
-Version:	0.12
+Version:	0.17
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	dcf283a722ff2bf059aaf20545a0276e
+# Source0-md5:	b153e2da41a3177b43a4b47211231805
 URL:		http://search.cpan.org/dist/MooseX-Types/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Carp::Clan) >= 6.00
+BuildRequires:	perl-Carp-Clan >= 6.00
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
 BuildRequires:	perl-Moose >= 0.61
 BuildRequires:	perl-Sub-Install >= 0.924
 BuildRequires:	perl-Sub-Name
+BuildRequires:	perl-Test-Simple >= 0.80
 BuildRequires:	perl-namespace-clean >= 0.08
 %endif
 BuildArch:	noarch
