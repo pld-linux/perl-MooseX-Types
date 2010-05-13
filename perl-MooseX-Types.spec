@@ -24,6 +24,7 @@ BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
 BuildRequires:	perl-Moose >= 0.61
 BuildRequires:	perl-Sub-Install >= 0.924
 BuildRequires:	perl-Sub-Name
+BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-Test-Simple >= 0.80
 BuildRequires:	perl-namespace-clean >= 0.08
 %endif
