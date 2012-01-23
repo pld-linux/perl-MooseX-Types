@@ -8,25 +8,24 @@
 Summary:	MooseX::Types - Organise your Moose types in libraries
 Summary(pl.UTF-8):	MooseX::Types - porządkuje typy Moose w biblioteki
 Name:		perl-MooseX-Types
-Version:	0.21
+Version:	0.31
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RK/RKITOVER/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	86cfc277adafad1b1edad733c8ea2a77
+Source0:	http://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	aea9a4cc6760e73ebb41604006e65ca1
 URL:		http://search.cpan.org/dist/MooseX-Types/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Carp-Clan >= 6.00
-BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
-BuildRequires:	perl-Moose >= 0.61
+BuildRequires:	perl-Moose >= 1.06
 BuildRequires:	perl-Sub-Install >= 0.924
 BuildRequires:	perl-Sub-Name
-BuildRequires:	perl-Test-Exception
-BuildRequires:	perl-Test-Simple >= 0.80
-BuildRequires:	perl-namespace-clean >= 0.08
+BuildRequires:	perl-Test-Fatal
+BuildRequires:	perl-Test-Requires
+BuildRequires:	perl-namespace-clean >= 0.19
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
